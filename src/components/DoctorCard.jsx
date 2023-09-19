@@ -5,7 +5,7 @@ const DoctorCard = ({ id, img, name, lastName, specialty }) => {
   return (
     <Link to={`/doctors/${id}`}>
       {" "}
-      <div className="w-auto border h-[420px] rounded-md shadow-md flex flex-col items-center justify-between  hover:scale-105  duration-300">
+      <div className="w-auto border h-[420px] rounded-md shadow-md flex flex-col items-center justify-between hover:shadow-xl  hover:scale-105 transition-all duration-700">
         <img
           className="w-[200px] h-[200px] rounded-[50%] object-cover mt-2"
           src={img && `https://api.eyeline.ge/uploads${img}`}
