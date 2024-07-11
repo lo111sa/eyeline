@@ -1,8 +1,9 @@
+import { lazy } from "react";
 import Navbar from "./components/Navbar";
 import Topbar from "./components/Topbar";
 import Home from "./pages/home/Home";
 import { Route, Routes } from "react-router-dom";
-import Doctors from "./pages/Doctors";
+const Doctors = lazy(() => import("./pages/Doctors"));
 import SingleDoctor from "./pages/SingleDoctor";
 import Offers from "./pages/Offers";
 import SingleOffer from "./pages/SingleOffer";
